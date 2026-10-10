@@ -1,0 +1,13 @@
+{
+  "name": "test-manager-library-3413974-tool",
+  "version": "1.0.0",
+  "description": "Utilidades y sembrador de datos de demostración para Manager Library",
+  "main": "seeder.js",
+  "type": "module",
+  "scripts": {
+    "seed": "node seeder.js"
+  },
+  "keywords": ["library", "seed", "tool"],
+  "author": "",
+  "license": "MIT"
+}

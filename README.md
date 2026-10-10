@@ -3,7 +3,22 @@
 > **Prueba técnica · Ficha ADSO 3413974**
 > Horario: de **9:15 a. m. a 3:00 p. m.** (15:00). Después, **feria de presentación** de cada proyecto.
 
-Este repositorio guarda las **utilidades** de *Manager Library*: el sembrador de datos de demostración, que usa la API. **Empieza vacío a propósito**: se construye en el fork de cada aprendiz.
+Este repositorio guarda las **utilidades** de *Manager Library*: el sembrador de datos de demostración (T-21), que consume exclusivamente la API REST pública (`/api/v1`).
+
+## Ejecución del Sembrador de Demostración (T-21)
+
+El sembrador pobla la biblioteca con más de 40 libros, más de 10 socios, préstamos activos y al menos 3 préstamos vencidos para cumplir los requisitos de la feria:
+
+```bash
+# Con la API en ejecución en http://localhost:8000:
+npm install # o usar Node.js 18+ nativo
+node seeder.js
+```
+
+Variables de entorno configurables:
+- `API_URL`: URL base de la API (por defecto `http://localhost:8000/api/v1`).
+- `ADMIN_USERNAME`: Usuario administrador (por defecto `admin`).
+- `ADMIN_PASSWORD`: Contraseña del administrador (por defecto `admin12345`).
 
 ## Instrucciones
 
